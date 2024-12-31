@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Jakarta Sans;
+  src: url(static/Jakarta\ Sans.ttf);
+}
+@font-face {
+  font-family: Jakarta Sans Bold;
+  src: url(static/Jakarta\ Sans\ Bold.ttf);
+}
+@font-face {
+  font-family: Jakarta Sans ExtraBold;
+  src: url(static/Jakarta\ Sans\ ExtraBold.ttf);
+}
+/*General styles*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Jakarta Sans Bold";
+  background-color: hsl(0, 0%, 100%);
+}
+main {
+  margin: 30px auto;
+  max-width: 380px;
+  padding: 0 10px;
+}
+p {
+  display: inline-block;
+  font-size: 16px;
+  color: hsl(219, 12%, 42%);
+}
+img {
+  width: 30px;
+}
+.grid1, .grid2, .grid3, .grid4,.grid6, .grid7 {
+  align-items: start;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: grid;
+  padding: 12px;
+  grid-template-columns: 40px 1fr;
+}
+.grid1, .grid2, .grid3 {
+  background-color: hsla(211, 68%, 94%, 0.6);
+}
+.duration {
+  color: hsl(219, 14%, 63%);
+}
+/*NOTIFICATION header style*/
+.banner {
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.banner button {
+  border: 0;
+  font-family: Jakarta Sans ExtraBold;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+}
+.banner button:hover {
+  color: hsl(219, 85%, 26%);
+}
+.banner-p1 {
+  color: hsl(224, 21%, 14%);
+  font-family: Jakarta Sans ExtraBold;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.banner-p2 {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding: 0 9px;
+  border-radius: 5px;
+  text-align: center;
+}
+a {
+  color: hsl(224, 21%, 14%);
+  font-family: "Jakarta Sans ExtraBold";
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(219, 85%, 26%);
+}
+/* Notification div*/
+.message {
+  color: hsl(219, 12%, 42%);
+  font-family: Jakarta Sans ExtraBold;
+}
+.message:hover {
+  color: hsl(219, 85%, 26%);
+}
+.message-chess {
+  color: hsl(219, 85%, 26%);
+  font-family: Jakarta Sans ExtraBold;
+}
+.middot {
+  color: hsl(1, 90%, 64%);
+  font-size: 10px;
+}
+.notific {
+  margin-bottom: 10px;
+}
+.Rizky-message {
+  border-radius: 5px;
+  border: 1px solid hsl(205, 33%, 90%);
+  padding:  10px 15px;
+}
+.Rizky-message:hover {
+  background-color: hsla(211, 68%, 94%);
+}
+.grid5 {
+  align-items: start;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: grid;
+  padding: 12px;
+  grid-template-columns: 40px 1fr 42px;
+}
+#image-chess {
+  width: 38px;
+}
+
+/*RESPONSIVENESS */
+@media (max-width: 400px) {
+  main {
+    max-width: 300px;
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 475px) {
+  main {
+    margin: 30px 20px;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    margin: 20px 5px;
+  }
+}
+@media (max-width: 433px) {
+  main {
+    max-width: 300px;
+    margin: 20px 40px;
+  }
+}
+@media (min-width: 500px) {
+  body {
+    background-color: hsl(210, 60%, 98%);
+  }
+  main {
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px 18px;
+  }
+}
+@media (min-width: 600px) {
+  main {
+    max-width: 530px;
+  }
+}
+@media (min-width: 730px) {
+  main {
+    max-width: 600px;
+  }
+}
